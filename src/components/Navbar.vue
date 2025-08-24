@@ -3,7 +3,7 @@
     class="fixed top-0 left-0 w-full bg-[#141414d3] backdrop-blur-sm text-white flex justify-between items-center px-4 py-3 z-50">
 
     <!-- Logo -->
-     
+
     <div class="flex items-center">
       <div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer">
         <img src="/public/sata logo.png" alt="">
@@ -53,6 +53,7 @@
     </button>
 
     <!-- Mobile Menu -->
+     
     <transition name="slide-fade">
       <div
         v-if="isOpen"

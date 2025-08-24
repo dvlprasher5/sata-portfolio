@@ -3,7 +3,7 @@
         <div class="max-w-6xl mx-auto text-center">
             
             <!-- Small button -->
-             
+
             <button class="bg-gray-900 text-sm px-4 py-1 rounded-full mb-4 border border-gray-700">
                 Why SATA?
             </button>
@@ -15,8 +15,11 @@
             </p>
 
             <!-- Comparison Grid -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
                 <!-- Crewcial Card -->
+
                 <div>
                     <h3 class="flex gap-4 items-center justify-center text-xl font-bold mb-4">
                         <div
@@ -40,6 +43,7 @@
                 </div>
 
                 <!-- Other Agencies Card -->
+                 
                 <div>   
                     <div>
                         <h1 class="flex gap-4 items-center justify-center text-xl font-bold mb-4">Other Agencies</h1>

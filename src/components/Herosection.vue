@@ -38,6 +38,7 @@
       </h1>
 
       <!-- Subheading -->
+
       <p class="text-lg text-gray-300 mt-6 max-w-2xl">
         We help businesses connect with their audience, boost engagement, and
         drive sales through tailored social media strategies and compelling
@@ -45,6 +46,7 @@
       </p>
 
       <!-- Button -->
+       
       <button
         class="mt-8 cursor-pointer bg-gradient-to-b from-gray-200 to-blue-300 text-black font-medium py-3 px-6 rounded-xl shadow hover:opacity-90 transition hover:scale-105 hover:shadow-lg"
       >
@@ -52,7 +54,7 @@
       </button>
 
       <!-- Rating -->
-       
+
       <div class="flex flex-col items-center mt-6">
         <div
           class="flex items-center space-x-1 text-yellow-400 drop-shadow-[0_0_6px_rgba(250,204,21,0.8)]"
