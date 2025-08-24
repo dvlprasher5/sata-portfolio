@@ -1,4 +1,5 @@
 <template>
+  
   <!-- <CHANGE> Added animated background image to hero section only -->
   <section
     class="relative flex flex-col items-center justify-center text-center text-white px-14 py-20 pt-28 overflow-hidden"
@@ -14,7 +15,7 @@
 
     <!-- Content with higher z-index -->
     <div class="relative z-10">
-      
+
       <!-- Label -->
       <span
         class="bg-black/80 border border-gray-600 text-sm px-4 py-1 rounded-full"
