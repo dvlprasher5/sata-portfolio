@@ -14,6 +14,7 @@
 
     <!-- Content with higher z-index -->
     <div class="relative z-10">
+      
       <!-- Label -->
       <span
         class="bg-black/80 border border-gray-600 text-sm px-4 py-1 rounded-full"
