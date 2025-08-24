@@ -46,7 +46,7 @@
       </p>
 
       <!-- Button -->
-       
+
       <button
         class="mt-8 cursor-pointer bg-gradient-to-b from-gray-200 to-blue-300 text-black font-medium py-3 px-6 rounded-xl shadow hover:opacity-90 transition hover:scale-105 hover:shadow-lg"
       >
@@ -113,6 +113,7 @@
     </div>
 
     <!-- Statistic Cards -->
+     
     <section class="bg-transparent py-12">
       <div class="flex flex-wrap justify-center gap-8 cursor-pointer">
         <div
