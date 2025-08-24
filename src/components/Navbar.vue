@@ -3,6 +3,7 @@
     class="fixed top-0 left-0 w-full bg-[#141414d3] backdrop-blur-sm text-white flex justify-between items-center px-4 py-3 z-50">
 
     <!-- Logo -->
+     
     <div class="flex items-center">
       <div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer">
         <img src="/public/sata logo.png" alt="">
@@ -10,6 +11,7 @@
     </div>
 
     <!-- Desktop Nav -->
+
     <nav class="hidden md:flex items-center space-x-6 font-semibold text-xl">
       <RouterLink
         to="/"
@@ -34,12 +36,14 @@
     </nav>
 
     <!-- Desktop Button -->
+
     <button
       class="hidden md:block ml-4 bg-gradient-to-b from-gray-200 to-blue-300 text-black font-medium py-2 px-4 rounded-lg shadow hover:opacity-90 transition">
       Book Consultation
     </button>
 
     <!-- Hamburger Button (mobile) -->
+
     <button
       class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 rounded hover:bg-white/10 transition"
       @click="isOpen = !isOpen">

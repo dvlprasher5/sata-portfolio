@@ -1,10 +1,13 @@
 <template>
-  
+
   <!-- <CHANGE> Added animated background image to hero section only -->
+
   <section
     class="relative flex flex-col items-center justify-center text-center text-white px-14 py-20 pt-28 overflow-hidden"
   >
+
     <!-- Animated Background Image -->
+
     <div class="absolute inset-0 z-0">
       <div
         class="animate-slide-left-right w-[200%] h-full bg-cover bg-center filter blur-sm opacity-30"
@@ -14,9 +17,11 @@
     </div>
 
     <!-- Content with higher z-index -->
+
     <div class="relative z-10">
 
       <!-- Label -->
+
       <span
         class="bg-black/80 border border-gray-600 text-sm px-4 py-1 rounded-full"
       >
@@ -24,6 +29,7 @@
       </span>
 
       <!-- Heading -->
+
       <h1
         class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-3xl text-white text-center"
       >
@@ -46,6 +52,7 @@
       </button>
 
       <!-- Rating -->
+       
       <div class="flex flex-col items-center mt-6">
         <div
           class="flex items-center space-x-1 text-yellow-400 drop-shadow-[0_0_6px_rgba(250,204,21,0.8)]"

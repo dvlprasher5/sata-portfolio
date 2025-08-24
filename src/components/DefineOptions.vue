@@ -1,7 +1,9 @@
 <template>
     <section class="text-white py-16 px-6">
         <div class="max-w-6xl mx-auto text-center">
+            
             <!-- Small button -->
+             
             <button class="bg-gray-900 text-sm px-4 py-1 rounded-full mb-4 border border-gray-700">
                 Why SATA?
             </button>
