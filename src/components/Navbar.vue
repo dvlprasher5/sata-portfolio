@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 w-full bg-[#141414d3] backdrop-blur-sm text-white flex justify-between items-center px-96 py-3 z-50">
+    class="fixed top-0 left-0 w-full bg-[#141414d3] text-white flex justify-between items-center px-96 py-3 z-50">
 
     <!-- Logo -->
 

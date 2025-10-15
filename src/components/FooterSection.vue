@@ -5,13 +5,11 @@
       <!-- Logo & Tagline -->
       <div>
         <div class="flex items-center mb-4">
-         <div class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full bg-white">
-        <div class="w-8 h-8 flex items-center justify-center border border-black rounded-full bg-white">
-          <span class="text-black font-bold text-lg">S</span>
+        <div class="w-8 h-8 flex items-center justify-cente">
+          <span class="text-black font-bold text-lg "><img src="../../public/sata logo.png" alt=""></span>
         </div>
-      </div>
-          <span class="ml-2 font-semibold text-lg">SATA</span>
-        </div>
+        <span class="ml-2 font-semibold text-lg">SATA</span>
+      </div>        
         <p class="text-gray-400 text-sm">
           Boost Your Brand with Social Media Marketing
         </p>
