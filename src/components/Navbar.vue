@@ -6,7 +6,7 @@
 
     <div class="flex items-center">
       <div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer">
-        <img src="/public/sata logo.png" alt="">
+        <img src="/sata logo.png" alt="">
       </div>
     </div>
 

@@ -6,7 +6,7 @@
       <div>
         <div class="flex items-center mb-4">
         <div class="w-8 h-8 flex items-center justify-cente">
-          <span class="text-black font-bold text-lg "><img src="../../public/sata logo.png" alt=""></span>
+          <span class="text-black font-bold text-lg "><img src="/sata logo.png" alt=""></span>
         </div>
         <span class="ml-2 font-semibold text-lg">SATA</span>
       </div>        
@@ -30,7 +30,7 @@
       <div>
         <h3 class="font-semibold mb-4 text-2xl">Social Media</h3>
         <ul class="space-y-2 text-gray-300">
-          <li><a href="https://github.com/mubeeyashkun95" class="hover:text-white">Instagram</a></li>
+          <li><a href="https://github.com/dvlprasher5" class="hover:text-white">Instagram</a></li>
           <li><a href="#" class="hover:text-white">TikTok</a></li>
           <li><a href="#" class="hover:text-white">LinkedIn</a></li>
         </ul>
