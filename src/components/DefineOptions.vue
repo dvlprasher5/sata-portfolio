@@ -20,38 +20,34 @@
       <!-- Comparison Grid -->
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Crewcial Card -->
 
+        <!-- Crewcial Card -->
         <div>
-          <h3
-            class="flex gap-4 items-center justify-center text-xl font-bold mb-4"
-          >
-            <div
-              class="w-10 h-10 flex items-center justify-center"
-            >
-              <div
-                class="w-8 h-8 flex items-center justify-center"
-              >
-                <span class="text-black font-bold text-lg"><img src="/sata logo.png" alt=""></span>
-              </div>
-            </div>
-            SATA
-          </h3>
-          <div
-            class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg rounded-2xl p-6 shadow-lg border border-white/10"
-          >
-            <ul class="space-y-3 flex flex-col items-center">
-              <li
-                v-for="(item, index) in crewcialList"
-                :key="index"
-                class="flex items-center gap-2"
-              >
-                <CircleCheckBig color="#bc71d1" class="glow-purple" />
-                <span>{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <h3 class="flex gap-2 items-center justify-center text-xl font-bold mb-4">
+    <div class="w-10 h-10 flex items-center justify-center">
+      <div class="w-10 h-10 flex items-center justify-center">
+        <span class="text-black font-bold text-lg">
+          <img src="/sata logo.png" alt="" class="w-full h-full object-contain" />
+        </span>
+      </div>
+    </div>
+    SATA
+  </h3>
+
+  <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg rounded-2xl p-6 shadow-lg border border-white/10">
+    <ul class="space-y-3 flex flex-col items-center">
+      <li
+        v-for="(item, index) in crewcialList"
+        :key="index"
+        class="flex items-center gap-2"
+      >
+        <CircleCheckBig color="#bc71d1" class="glow-purple" />
+        <span>{{ item }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
         <!-- Other Agencies Card -->
 
