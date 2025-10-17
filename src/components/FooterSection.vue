@@ -30,8 +30,8 @@
       <div>
         <h3 class="font-semibold mb-4 text-2xl">Social Media</h3>
         <ul class="space-y-2 text-gray-300">
-          <li><a href="https://github.com/dvlprasher5" class="hover:text-white">Instagram</a></li>
-          <li><a href="#" class="hover:text-white">TikTok</a></li>
+          <li><a href="https://github.com/dvlprasher5" class="hover:text-white" target="blank">Github</a></li>
+          <li><a href="https://www.instagram.com/asheryyyy_/" class="hover:text-white">Instagram</a></li>
           <li><a href="#" class="hover:text-white">LinkedIn</a></li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
       <div>
         <h3 class="font-semibold mb-4 text-2xl">Contact</h3>
         <ul class="space-y-2 text-gray-300">
-          <li><a href="mailto:crewciahello@gmail.com" class="hover:text-white">crewciahello@gmail.com</a></li>
+          <li><a href="mailto:jr.asher72@gmail.com" class="hover:text-white">jr.asher72@gmail.com</a></li>
           <li>23 Artist Avenue, Suite 456, Wonderland</li>
         </ul>
       </div>
