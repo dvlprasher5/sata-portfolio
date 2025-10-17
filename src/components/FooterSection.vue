@@ -41,7 +41,7 @@
         <h3 class="font-semibold mb-4 text-2xl">Contact</h3>
         <ul class="space-y-2 text-gray-300">
           <li><a href="mailto:jr.asher72@gmail.com" class="hover:text-white">jr.asher72@gmail.com</a></li>
-          <li>23 Artist Avenue, Suite 456, Wonderland</li>
+          <li>W9CH+GCP main Chowk, near jama masjid, Danyor</li>
         </ul>
       </div>
     </div>
@@ -55,7 +55,7 @@
     <div class="w-full max-w-96 border-b border-gray-700 my-6 mx-auto mt-4">      
     </div>
     <div class="text-center items-center mx-auto font-semibold text-gray-400">
-        <h1>2025 Crewcial. All rights reserved.</h1>
+        <h1>2025 Asher Ali. All rights reserved.</h1>
     </div>
   </footer>
 </template>

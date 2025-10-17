@@ -27,12 +27,12 @@
             class="flex gap-4 items-center justify-center text-xl font-bold mb-4"
           >
             <div
-              class="w-10 h-10 flex items-center justify-center border-2 border-white rounded-full bg-white"
+              class="w-10 h-10 flex items-center justify-center"
             >
               <div
-                class="w-8 h-8 flex items-center justify-center border border-black rounded-full bg-white"
+                class="w-8 h-8 flex items-center justify-center"
               >
-                <span class="text-black font-bold text-lg">S</span>
+                <span class="text-black font-bold text-lg"><img src="/sata logo.png" alt=""></span>
               </div>
             </div>
             SATA
