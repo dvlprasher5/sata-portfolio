@@ -30,7 +30,7 @@
           <div class="mb-4 text-gray-300">
             <div
               v-html="service.icon"
-              class="w-8 h-8 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+              class="w-10 h-10 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
             ></div>
           </div>
           <h3 class="text-lg font-bold mb-2">{{ service.title }}</h3>
@@ -44,59 +44,43 @@
 <script setup>
 const services = [
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-             <path d="M3 3h18v4H3zM3 11h18v4H3zM3 19h18v2H3z"/>
-           </svg>`,
-    title: "Social Media Strategy",
+    icon: `<img width="54" height="54" src="https://img.icons8.com/color/48/web-design.png" alt="web-design"/>`,
+    title: "UI/UX",
     description:
-      "We create data-driven strategies tailored to your business goals, ensuring you reach the right audience with maximum impact.",
+      "We craft user-focused interfaces driven by data and strategy, ensuring every design decision enhances engagement and achieves your business goals.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-             <path d="M12 20h9" />
-             <path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-           </svg>`,
-    title: "Content Creation",
+    icon: `<img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-book-keeping-finance-flaticons-lineal-color-flat-icons.png" alt="external-book-keeping-finance-flaticons-lineal-color-flat-icons"/>`,
+    title: "Book Keeping",
     description:
-      "Our team produces eye-catching graphics and captivating copy that showcase your brand's message and attract attention.",
+      "We deliver reliable bookkeeping solutions that simplify your finances, ensuring accuracy, compliance, and peace of mind.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-             <circle cx="12" cy="12" r="10"/>
-             <path d="M12 6v6l4 2"/>
-           </svg>`,
-    title: "Analytics & Reporting",
+    icon: `<img width="48" height="48" src="https://img.icons8.com/fluency/48/window-settings--v1.png" alt="window-settings--v1"/>`,
+    title: "Web Development",
     description:
-      "We provide detailed insights into your social media performance, helping you grow rapidly and strategically.",
+      "We develop dynamic, user-friendly websites that enhance your online presence and drive measurable business growth.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-             <path d="M4 12l2 2 4-4" />
-             <path d="M12 6l2 2 4-4" />
-             <path d="M12 12l2 2 4-4" />
-             <path d="M4 18l2 2 4-4" />
-           </svg>`,
-    title: "Community Management",
+    icon: `<img width="64" height="64" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png" alt="external-app-development-responsive-web-design-justicon-lineal-color-justicon"/>`,
+    title: "App Development",
     description:
-      "We build and nurture relationships with your audience, ensuring engagement and loyalty to your brand.",
+      "We create intuitive, high-performing mobile apps that keep users engaged and build lasting connections with your brand.",
   },
   {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-             <line x1="12" y1="1" x2="12" y2="23"/>
-             <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H15a3.5 3.5 0 0 1 0 7H6"/>
-           </svg>`,
-    title: "Paid Advertising",
+    icon: `<img width="64" height="64" src="https://img.icons8.com/dusk/64/artificial-intelligence.png" alt="artificial-intelligence"/>`,
+    title: "AI Technologies",
     description:
-      "We create high-ROI ad campaigns tailored to your target audience for maximum reach and conversions.",
+      "We harness the power of artificial intelligence to build smart, data-driven systems that boost efficiency, accuracy, and business growth.",
   },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-             <circle cx="11" cy="11" r="8" />
-             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-           </svg>`,
-    title: "Brand Monitoring",
-    description:
-      "We track your brand's online presence to ensure your reputation stays strong and relevant.",
-  },
+  // {
+  //   icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  //            <circle cx="11" cy="11" r="8" />
+  //            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+  //          </svg>`,
+  //   title: "Brand Monitoring",
+  //   description:
+  //     "We track your brand's online presence to ensure your reputation stays strong and relevant.",
+  // },
 ];
 </script>

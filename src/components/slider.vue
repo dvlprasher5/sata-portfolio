@@ -24,7 +24,7 @@ export default {
   name: "ScrollingTags",
   data() {
     return {
-      items: ["Content Creation", "Marketing Strategy", "Online Presence", "Digital Marketing"],
+      items: ["UI/UX", "Book Keeping", "Web Development", "App Development", "AI Technologies"],
     };
   },
   computed: {
