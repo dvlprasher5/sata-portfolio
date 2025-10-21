@@ -2,27 +2,53 @@
   <header
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
-    :class="['fixed top-0 left-0 w-full bg-[#141414d3] text-white flex justify-between items-center px-96 py-3 z-50 transition-transform duration-300', navbarHidden && !isHovering ? '-translate-y-full' : 'translate-y-0']">
+    :class="['fixed top-0 left-0 w-full bg-[#141414d3] text-white flex justify-between items-center px-4 md:px-96 py-3 z-50 transition-transform duration-300', navbarHidden && !isHovering ? '-translate-y-full' : 'translate-y-0']">
 
     <!-- Logo -->
     <div class="flex items-center">
-      <div class="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer">
+      <div class="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center rounded-full cursor-pointer">
         <img src="/sata logo.png" alt="">
       </div>
     </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center space-x-6 font-semibold text-xl">
-      <a href="/" :class="currentPath === '/' ? 'text-blue-400' : 'hover:text-gray-300'">
+    <nav class="hidden md:flex items-center space-x-6 font-semibold text-xl relative">
+      <!-- Added cylindrical background that slides behind active link -->
+      <div
+        v-if="activeLink"
+        class="absolute top-1/2 -translate-y-1/2 h-10 bg-blue-500/20 rounded-full transition-all duration-300 ease-out"
+        :style="{
+          width: activeLink.width + 'px',
+          left: activeLink.left + 'px',
+        }"
+      />
+      
+      <a 
+        href="/" 
+        ref="navLinkRefs"
+        :class="['relative z-10 transition-all duration-300 px-3 py-1.5 rounded-lg', currentPath === '/' ? 'text-blue-400' : 'hover:text-gray-300']"
+        @click="setActiveLink($event, '/')">
         Home
       </a>
-      <a href="/about" :class="currentPath === '/about' ? 'text-blue-400' : 'hover:text-gray-300'">
+      <a 
+        href="/about" 
+        ref="navLinkRefs"
+        :class="['relative z-10 transition-all duration-300 px-3 py-1.5 rounded-lg', currentPath === '/about' ? 'text-blue-400' : 'hover:text-gray-300']"
+        @click="setActiveLink($event, '/about')">
         About
       </a>
-      <a href="/work" :class="currentPath === '/work' ? 'text-blue-400' : 'hover:text-gray-300'">
+      <a 
+        href="/work" 
+        ref="navLinkRefs"
+        :class="['relative z-10 transition-all duration-300 px-3 py-1.5 rounded-lg', currentPath === '/work' ? 'text-blue-400' : 'hover:text-gray-300']"
+        @click="setActiveLink($event, '/work')">
         Work
       </a>
-      <a href="/contact" :class="currentPath === '/contact' ? 'text-blue-400' : 'hover:text-gray-300'">
+      <a 
+        href="/contact" 
+        ref="navLinkRefs"
+        :class="['relative z-10 transition-all duration-300 px-3 py-1.5 rounded-lg', currentPath === '/contact' ? 'text-blue-400' : 'hover:text-gray-300']"
+        @click="setActiveLink($event, '/contact')">
         Contact
       </a>
     </nav>
@@ -37,22 +63,42 @@
     <button
       class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 rounded hover:bg-white/10 transition"
       @click="isOpen = !isOpen">
-      <span class="block w-6 h-0.5 bg-white"></span>
-      <span class="block w-6 h-0.5 bg-white"></span>
-      <span class="block w-6 h-0.5 bg-white"></span>
+      <span :class="['block w-6 h-0.5 bg-white transition-all duration-300', isOpen && 'rotate-45 translate-y-2']"></span>
+      <span :class="['block w-6 h-0.5 bg-white transition-all duration-300', isOpen && 'opacity-0']"></span>
+      <span :class="['block w-6 h-0.5 bg-white transition-all duration-300', isOpen && '-rotate-45 -translate-y-2']"></span>
     </button>
 
     <!-- Mobile Menu -->
     <transition name="slide-fade">
       <div
         v-if="isOpen"
-        class="absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm flex flex-col text-white p-4 space-y-3 md:hidden z-50">
-        <a href="/" @click="closeMenu" :class="currentPath === '/' ? 'text-blue-400' : 'hover:text-blue-400'">Home</a>
-        <a href="/about" @click="closeMenu" :class="currentPath === '/about' ? 'text-blue-400' : 'hover:text-blue-400'">About</a>
-        <a href="/work" @click="closeMenu" :class="currentPath === '/work' ? 'text-blue-400' : 'hover:text-blue-400'">Work</a>
-        <a href="/contact" @click="closeMenu" :class="currentPath === '/contact' ? 'text-blue-400' : 'hover:text-blue-400'">Contact</a>
+        class="absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm flex flex-col text-white p-4 space-y-4 md:hidden z-50">
+        <a 
+          href="/" 
+          @click="closeMenu" 
+          :class="['py-2 px-3 rounded-lg transition-all duration-300', currentPath === '/' ? 'text-blue-400 bg-blue-500/10' : 'hover:text-blue-400 hover:bg-white/5']">
+          Home
+        </a>
+        <a 
+          href="/about" 
+          @click="closeMenu" 
+          :class="['py-2 px-3 rounded-lg transition-all duration-300', currentPath === '/about' ? 'text-blue-400 bg-blue-500/10' : 'hover:text-blue-400 hover:bg-white/5']">
+          About
+        </a>
+        <a 
+          href="/work" 
+          @click="closeMenu" 
+          :class="['py-2 px-3 rounded-lg transition-all duration-300', currentPath === '/work' ? 'text-blue-400 bg-blue-500/10' : 'hover:text-blue-400 hover:bg-white/5']">
+          Work
+        </a>
+        <a 
+          href="/contact" 
+          @click="closeMenu" 
+          :class="['py-2 px-3 rounded-lg transition-all duration-300', currentPath === '/contact' ? 'text-blue-400 bg-blue-500/10' : 'hover:text-blue-400 hover:bg-white/5']">
+          Contact
+        </a>
         <button
-          class="bg-gradient-to-b from-gray-200 to-blue-300 text-black font-medium py-2 px-4 rounded-lg shadow hover:opacity-90 transition">
+          class="w-full bg-gradient-to-b from-gray-200 to-blue-300 text-black font-medium py-2 px-4 rounded-lg shadow hover:opacity-90 transition">
           Book Consultation
         </button>
       </div>
@@ -67,27 +113,33 @@ const isOpen = ref(false)
 const navbarHidden = ref(false)
 const lastScrollY = ref(0)
 const currentPath = ref('/')
-// <CHANGE> Added isHovering ref to track mouse hover state
 const isHovering = ref(false)
+const activeLink = ref(null)
+const navLinkRefs = ref([])
 
 const closeMenu = () => {
   isOpen.value = false
 }
 
-// <CHANGE> Added mouse enter handler to show navbar on hover
 const onMouseEnter = () => {
   isHovering.value = true
 }
 
-// <CHANGE> Added mouse leave handler to hide navbar on mouse leave
 const onMouseLeave = () => {
   isHovering.value = false
+}
+
+const setActiveLink = (event, path) => {
+  const element = event.target
+  activeLink.value = {
+    width: element.offsetWidth,
+    left: element.offsetLeft,
+  }
 }
 
 const handleScroll = () => {
   const currentScrollY = window.scrollY
 
-  // Hide navbar when scrolling down, show when scrolling up
   if (currentScrollY > lastScrollY.value && currentScrollY > 50) {
     navbarHidden.value = true
   } else {
@@ -100,6 +152,14 @@ const handleScroll = () => {
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
   currentPath.value = window.location.pathname
+  
+  if (navLinkRefs.value.length > 0) {
+    const firstLink = navLinkRefs.value[0]
+    activeLink.value = {
+      width: firstLink.offsetWidth,
+      left: firstLink.offsetLeft,
+    }
+  }
 })
 
 onUnmounted(() => {
