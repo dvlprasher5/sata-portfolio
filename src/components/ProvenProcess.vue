@@ -15,25 +15,41 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4 mb-8">
         <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
           <h3 class="text-3xl font-bold">01</h3>
-          <h4 class="font-semibold mb-2">Discovery & Planning</h4>
+          <h4 class="font-semibold mb-2">Discovery & Strategy</h4>
           <p class="text-gray-400 mt-5">
-            We start by understanding your business goals, challenges, and technical needs to craft a tailored development plan that fits your vision.
+            We assess your business landscape, uncover growth opportunities, and establish project goals that guide the entire development process.
           </p>
         </div>
   
         <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
           <h3 class="text-3xl font-bold">02</h3>
-          <h4 class="font-semibold mb-2">Design & Development</h4>
+          <h4 class="font-semibold mb-2">Design & Prototyping</h4>
           <p class="text-gray-400 mt-5">
-            Our team designs intuitive interfaces and develops secure, scalable software using the latest technologies to ensure seamless performance.
+            Our UI/UX specialists craft wireframes and interactive prototypes that bring your ideas to life, ensuring smooth navigation and an intuitive user experience.
           </p>
         </div>
   
         <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
           <h3 class="text-3xl font-bold">03</h3>
-          <h4 class="font-semibold mb-2">Testing, Launch & Support</h4>
+          <h4 class="font-semibold mb-2">Development</h4>
           <p class="text-gray-400 mt-5">
-            After thorough testing and deployment, we continue to monitor, maintain, and enhance your software for long-term success and stability.
+            Our developers turn stunning designs into functional reality with the latest technologies, ensuring seamless performance across all platforms.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
+          <h3 class="text-3xl font-bold">03</h3>
+          <h4 class="font-semibold mb-2">Testing & Deployment</h4>
+          <p class="text-gray-400 mt-5">
+            Our team carefully tests every component to maintain the highest standards of quality, performance, and security.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
+          <h3 class="text-3xl font-bold">03</h3>
+          <h4 class="font-semibold mb-2">Ongoing Support</h4>
+          <p class="text-gray-400 mt-5">
+            Our process focuses on continuous improvement by analyzing feedback and user data to refine performance.
           </p>
         </div>
       </div>
