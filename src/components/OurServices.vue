@@ -79,7 +79,7 @@ const services = [
   },
 
   {
-    icon: `<img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-consultation-psychology-flaticons-lineal-color-flat-icons-2.png" alt="external-consultation-psychology-flaticons-lineal-color-flat-icons-2"/>`,
+    icon: `<img width="64" height="64" src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/external-consultation-teamwork-wanicon-lineal-color-wanicon.png" alt="external-consultation-teamwork-wanicon-lineal-color-wanicon"/>`,
     title: "Software Consulting",
     description:
       "We help businesses choose the right technology stack, optimize operations, and scale efficiently.",

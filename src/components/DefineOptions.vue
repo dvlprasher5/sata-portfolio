@@ -78,10 +78,10 @@
 import { CircleCheckBig } from "lucide-vue-next";
 
 const sataList = [
-  "Custom-built software tailored to your business needs",
-  "Seamless communication and transparent progress updates",
-  "Scalable, secure, and future-proof code architecture",
-  "Experienced in-house developers and designers",
+  "We focus on delivering measurable outcomes, not just code.",
+  "We blend creativity with technology to solve complex problems.",
+  "Experienced developers, designers, and strategists under one roof.",
+  "We deliver efficiently through agile practices.",
   "On-time delivery with post-launch support",
 ];
 
