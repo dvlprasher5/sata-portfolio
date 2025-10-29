@@ -55,7 +55,7 @@
     <div class="w-full max-w-96 border-b border-gray-700 my-6 mx-auto mt-4">      
     </div>
     <div class="text-center items-center mx-auto font-semibold text-gray-400">
-        <h1>2025 Asher Ali. All rights reserved.</h1>
+        <h1>2025 SATA Technologies Pvt Ltd. All rights reserved.</h1>
     </div>
   </footer>
 </template>

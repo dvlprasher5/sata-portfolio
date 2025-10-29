@@ -12,33 +12,33 @@
           </p>
         </div>
         <div>
-          <button
+          <!-- <button
             class="border cursor-pointer mt-24 border-gray-600 px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
           >
             Learn More
-          </button>
+          </button> -->
         </div>
       </div>
 
       <!-- Services Grid (2 per row) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div
-          v-for="(service, index) in services"
-          :key="index"
-          class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg  shadow-lg border border-white/10 rounded-xl p-6 hover:border-gray-600 transition"
-        >
-          <div class="mb-4 text-gray-300">
-            <div
-              v-html="service.icon"
-              class="w-10 h-10 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
-            ></div>
-          </div>
-          <h3 class="text-lg font-bold mb-2">{{ service.title }}</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">{{ service.description }}</p>
-        </div>
-      </div>
+  <div
+    v-for="(service, index) in services"
+    :key="index"
+    class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg  shadow-lg border border-white/10 rounded-xl p-6 hover:border-gray-600 transition"
+  >
+    <div class="mb-4 text-gray-300">
+      <div
+        v-html="service.icon"
+        class="w-12 h-12 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+      ></div>
     </div>
-  </section>
+    <h3 class="text-lg font-bold mb-2">{{ service.title }}</h3>
+    <p class="text-gray-400 text-sm leading-relaxed">{{ service.description }}</p>
+  </div>
+</div>
+</div>
+</section>
 </template>
 
 <script setup>
@@ -49,38 +49,40 @@ const services = [
     description:
       "We craft user-focused interfaces driven by data and strategy, ensuring every design decision enhances engagement and achieves your business goals.",
   },
+
   {
     icon: `<img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-book-keeping-finance-flaticons-lineal-color-flat-icons.png" alt="external-book-keeping-finance-flaticons-lineal-color-flat-icons"/>`,
     title: "Book Keeping",
     description:
       "We deliver reliable bookkeeping solutions that simplify your finances, ensuring accuracy, compliance, and peace of mind.",
   },
+
   {
     icon: `<img width="48" height="48" src="https://img.icons8.com/fluency/48/window-settings--v1.png" alt="window-settings--v1"/>`,
     title: "Web Development",
     description:
       "We develop dynamic, user-friendly websites that enhance your online presence and drive measurable business growth.",
   },
+
   {
     icon: `<img width="64" height="64" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png" alt="external-app-development-responsive-web-design-justicon-lineal-color-justicon"/>`,
     title: "App Development",
     description:
       "We create intuitive, high-performing mobile apps that keep users engaged and build lasting connections with your brand.",
   },
+
   {
     icon: `<img width="64" height="64" src="https://img.icons8.com/dusk/64/artificial-intelligence.png" alt="artificial-intelligence"/>`,
     title: "AI Technologies",
     description:
       "We harness the power of artificial intelligence to build smart, data-driven systems that boost efficiency, accuracy, and business growth.",
   },
-  // {
-  //   icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-  //            <circle cx="11" cy="11" r="8" />
-  //            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-  //          </svg>`,
-  //   title: "Brand Monitoring",
-  //   description:
-  //     "We track your brand's online presence to ensure your reputation stays strong and relevant.",
-  // },
+
+  {
+    icon: `<img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-consultation-psychology-flaticons-lineal-color-flat-icons-2.png" alt="external-consultation-psychology-flaticons-lineal-color-flat-icons-2"/>`,
+    title: "Software Consulting",
+    description:
+      "We help businesses choose the right technology stack, optimize operations, and scale efficiently.",
+  },
 ];
 </script>
