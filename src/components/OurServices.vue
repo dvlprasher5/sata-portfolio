@@ -44,7 +44,7 @@
 <script setup>
 const services = [
   {
-    icon: `<img width="54" height="54" src="https://img.icons8.com/color/48/web.png" alt="web"/>`,
+    icon: `<img width="54" height="54" src="https://img.icons8.com/external-goofy-color-kerismaker/96/external-UI-UX-Design-graphic-design-goofy-color-kerismaker.png" alt="external-UI-UX-Design-graphic-design-goofy-color-kerismaker"/>`,
     title: "UI/UX",
     description:
       "We craft user-focused interfaces driven by data and strategy, ensuring every design decision enhances engagement and achieves your business goals.",
