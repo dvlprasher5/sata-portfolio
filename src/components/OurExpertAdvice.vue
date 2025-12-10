@@ -1,14 +1,14 @@
 <template>
-  <section class=" text-white py-16">
+  <section class="text-gray-900 py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
 
       <!-- Header -->
       <div class="text-center mb-12">
-        <span class="px-4 py-1 border border-white rounded-full text-sm">
+        <span class="px-4 py-1 border border-gray-300 rounded-full text-sm bg-white shadow-sm">
           Our Expert Advice
         </span>
         <h2 class="text-4xl font-bold mt-6">Insights & Tips</h2>
-        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
           Explore our blog for valuable insights and practical tips to enhance your social media marketing strategy
           and drive success for your business.
         </p>
@@ -16,20 +16,21 @@
 
       <!-- One Card Row -->
       <div class="grid grid-cols-1">
-        <div class=" from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10 rounded-2xl overflow-hidden flex flex-col md:flex-row">
+        
+        <div class="bg-white shadow-lg border border-gray-200 rounded-2xl overflow-hidden flex flex-col md:flex-row">
           
           <!-- Image -->
           <div class="md:w-1/2 py-4 px-4">
             <img 
               src="/src/assets/cat.jpg"
               alt="Blog Image"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover rounded-lg"
             />
           </div>
 
           <!-- Content -->
           <div class="md:w-1/2 p-4 flex flex-col justify-center">
-            <div class="flex items-center text-gray-400 text-sm space-x-2 mb-2">
+            <div class="flex items-center text-gray-600 text-sm space-x-2 mb-2">
               <span class="uppercase tracking-wide">Brands</span>
               <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
               <span class="flex items-center space-x-1">
@@ -41,27 +42,27 @@
                 <span>Jul 17, 2024</span>
               </span>
             </div>
-            <h3 class="text-xl font-bold mb-2">Building a Strong Brand Identity</h3>
-            <p class="text-gray-400">
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Building a Strong Brand Identity</h3>
+            <p class="text-gray-600">
               This article emphasizes the power of storytelling in shaping a brand and outlines practical steps to develop a brand identity.
             </p>
           </div>
 
         </div>
-         <div class="mt-6 from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10 rounded-2xl overflow-hidden flex flex-col md:flex-row">
+         <div class="mt-6 bg-white shadow-lg border border-gray-200 rounded-2xl overflow-hidden flex flex-col md:flex-row">
           
           <!-- Image -->
           <div class="md:w-1/2 py-4 px-4">
             <img 
               src="/src/assets/Brand1.jpg"
               alt="Blog Image"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover rounded-lg"
             />
           </div>
 
           <!-- Content -->
           <div class="md:w-1/2 p-6 flex flex-col justify-center">
-            <div class="flex items-center text-gray-400 text-sm space-x-2 mb-2">
+            <div class="flex items-center text-gray-600 text-sm space-x-2 mb-2">
               <span class="uppercase tracking-wide">Brands</span>
               <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
               <span class="flex items-center space-x-1">
@@ -74,27 +75,27 @@
               </span>
             </div>
 
-            <h3 class="text-xl font-bold mb-2">Building a Strong Brand Identity</h3>
-            <p class="text-gray-400">
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Building a Strong Brand Identity</h3>
+            <p class="text-gray-600">
               This article emphasizes the power of storytelling in shaping a brand and outlines practical steps to develop a brand identity.
             </p>
           </div>
 
         </div>
-        <div class="mt-6 from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10 rounded-2xl overflow-hidden flex flex-col md:flex-row">
+        <div class="mt-6 bg-white shadow-lg border border-gray-200 rounded-2xl overflow-hidden flex flex-col md:flex-row">
           
           <!-- Image -->
           <div class="md:w-1/2 py-4 px-4">
             <img 
               src="/src/assets/Brand2.jpg"
               alt="Blog Image"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover rounded-lg"
             />
           </div>
 
           <!-- Content -->
           <div class="md:w-1/2 p-6 flex flex-col justify-center">
-            <div class="flex items-center text-gray-400 text-sm space-x-2 mb-2">
+            <div class="flex items-center text-gray-600 text-sm space-x-2 mb-2">
               <span class="uppercase tracking-wide">Brands</span>
               <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
               <span class="flex items-center space-x-1">
@@ -107,16 +108,16 @@
               </span>
             </div>
 
-            <h3 class="text-xl font-bold mb-2">Building a Strong Brand Identity</h3>
-            <p class="text-gray-400">
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Building a Strong Brand Identity</h3>
+            <p class="text-gray-600">
               This article emphasizes the power of storytelling in shaping a brand and outlines practical steps to develop a brand identity.
             </p>
           </div>
 
         </div>
       </div>
-      <div class="justfiy-center items-center text-center mt-12">
-        <button class="px-5 cursor-pointer py-3 border border-white/10 rounded-xl  hover:bg-[#1a1a1a]/80">View All Articles</button>
+      <div class="justify-center items-center text-center mt-12">
+        <button class="px-5 cursor-pointer py-3 border border-gray-300 rounded-xl hover:bg-gray-100 transition">View All Articles</button>
       </div>
 
     </div>

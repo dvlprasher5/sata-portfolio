@@ -1,77 +1,104 @@
 <template>
-    <section class=" text-white py-12">
+  <section class="text-gray-900 py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+        
+      <!-- Small button -->
+      <button
+        class="bg-white text-sm px-4 py-1 rounded-full mb-4 border border-gray-300 shadow-sm"
+      >
+        Why SATA?
+      </button>
+
       <!-- Heading -->
-      <div class="max-w-6xl mx-auto text-center mb-10">
-        <button class="px-4 py-1 border border-white rounded-full text-sm mb-4">
-          Simple Process
-        </button>
-        <h2 class="text-3xl font-bold mb-2">Our Proven Process</h2>
-        <p class="text-gray-300 max-w-2xl mx-auto">
-          We simplify software development by following a transparent, three-step process designed to deliver reliable, high-quality digital solutions.
-        </p>
-      </div>
-  
-      <!-- Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4 mb-8">
-        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
-          <h3 class="text-3xl font-bold">01</h3>
-          <h4 class="font-semibold mb-2">Discovery & Strategy</h4>
-          <p class="text-gray-400 mt-5">
-            We assess your business landscape, uncover growth opportunities, and establish project goals that guide the entire development process.
-          </p>
-        </div>
-  
-        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
-          <h3 class="text-3xl font-bold">02</h3>
-          <h4 class="font-semibold mb-2">Design & Prototyping</h4>
-          <p class="text-gray-400 mt-5">
-            Our UI/UX specialists craft wireframes and interactive prototypes that bring your ideas to life, ensuring smooth navigation and an intuitive user experience.
-          </p>
-        </div>
-  
-        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
-          <h3 class="text-3xl font-bold">03</h3>
-          <h4 class="font-semibold mb-2">Development</h4>
-          <p class="text-gray-400 mt-5">
-            Our developers turn stunning designs into functional reality with the latest technologies, ensuring seamless performance across all platforms.
-          </p>
-        </div>
+      <h2 class="text-4xl font-bold mb-2">What makes us different?</h2>
+      <p class="text-gray-600 mb-12">
+        While other companies deliver code, we deliver complete software solutions.
+      </p>
 
-        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
-          <h3 class="text-3xl font-bold">03</h3>
-          <h4 class="font-semibold mb-2">Testing & Deployment</h4>
-          <p class="text-gray-400 mt-5">
-            Our team carefully tests every component to maintain the highest standards of quality, performance, and security.
-          </p>
-        </div>
+      <!-- Comparison Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
-          <h3 class="text-3xl font-bold">03</h3>
-          <h4 class="font-semibold mb-2">Ongoing Support</h4>
-          <p class="text-gray-400 mt-5">
-            Our process focuses on continuous improvement by analyzing feedback and user data to refine performance.
-          </p>
-        </div>
-      </div>
-  
-      <!-- Button outside cards -->
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg rounded-xl p-8 flex flex-col md:flex-row justify-between items-center shadow-lg border border-white/10">
-          <!-- Left text -->
-          <div class="mb-4 md:mb-0">
-            <h3 class="text-lg font-bold">Ready to Build Your Next Software Solution?</h3>
-            <p class="text-gray-400">
-              Partner with our expert team to create powerful, scalable, and innovative software tailored to your business goals.
-            </p>
+        <!-- SATA Card -->
+        <div>
+          <h3 class="flex gap-2 items-center justify-center text-xl font-bold mb-4">
+            <div class="w-10 h-10 flex items-center justify-center">
+              <div class="w-10 h-10 flex items-center justify-center">
+                <span class="text-black font-bold text-lg">
+                  <img src="/sata logo.png" alt="" class="w-full h-full object-contain" />
+                </span>
+              </div>
+            </div>
+            SATA
+          </h3>
+
+          <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 shadow-lg border border-blue-200">
+            <ul class="space-y-3 flex flex-col items-start">
+              <li
+                v-for="(item, index) in sataList"
+                :key="index"
+                class="flex items-center gap-2 text-gray-900"
+              >
+                <CircleCheckBig color="#bc71d1" class="glow-purple" />
+                <span>{{ item }}</span>
+              </li>
+            </ul>
           </div>
-  
-          <!-- Right button -->
-          <button
-            class="px-8 cursor-pointer py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-gray-100 to-blue-200 hover:from-gray-200 hover:to-blue-300 transition">
-            Book Consultation Call
-          </button>
+        </div>
+
+        <!-- Other Companies Card -->
+        <div>
+          <div>
+            <h1
+              class="flex gap-4 items-center justify-center text-xl font-bold mb-4"
+            >
+              Other Companies
+            </h1>
+          </div>
+          <div
+            class="bg-gradient-to-br mt-7 from-gray-50 to-white rounded-2xl p-6 shadow-lg border border-gray-300"
+          >
+            <ul class="space-y-3 flex flex-col items-start">
+              <li
+                v-for="(item, index) in otherCompaniesList"
+                :key="index"
+                class="flex items-center gap-2 text-gray-900"
+              >
+                <CircleCheckBig color="#009996" class="glow-teal" />
+                <span>{{ item }}</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-  </template>
-  
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { CircleCheckBig } from "lucide-vue-next";
+
+const sataList = [
+  "We focus on delivering measurable outcomes, not just code.",
+  "We blend creativity with technology to solve complex problems.",
+  "Experienced developers, designers, and strategists under one roof.",
+  "We deliver efficiently through agile practices.",
+  "On-time delivery with post-launch support",
+];
+
+const otherCompaniesList = [
+  "One-size-fits-all software with limited customization",
+  "Slow communication and unclear development timelines",
+  "Neglects scalability and long-term maintenance",
+  "Dependence on outsourced or inexperienced teams",
+  "Little to no support after project completion",
+];
+</script>
+
+<style scoped>
+.glow-purple {
+  filter: drop-shadow(0 0 4px rgba(188, 113, 209, 0.6));
+}
+.glow-teal {
+  filter: drop-shadow(0 0 4px rgba(0, 153, 150, 0.6));
+}
+</style>

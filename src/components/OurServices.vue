@@ -1,19 +1,19 @@
 <template>
-  <section class="mt-6 text-white py-16 px-6">
+  <section class="mt-6 text-gray-900 py-16 px-6 bg-gray-50">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
       <div class="flex justify-between items-start mb-12 flex-wrap gap-4">
         <div>
-          <button class="bg-gray-800 text-sm px-4 py-1 rounded-full mb-4">What We Deliver</button>
+          <button class="bg-white border border-gray-300 text-sm px-4 py-1 rounded-full mb-4 shadow-sm">What We Deliver</button>
           <h2 class="text-4xl font-bold mb-4">Our Services</h2>
-          <p class="text-gray-400 max-w-2xl">
+          <p class="text-gray-600 max-w-2xl">
             We offer tailored solutions to enhance your social media presence and
             drive real results for your business.
           </p>
         </div>
         <div>
           <!-- <button
-            class="border cursor-pointer mt-24 border-gray-600 px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
+            class="border cursor-pointer mt-24 border-gray-300 px-6 py-2 rounded-full text-sm hover:bg-gray-900 hover:text-white transition"
           >
             Learn More
           </button> -->
@@ -25,16 +25,16 @@
   <div
     v-for="(service, index) in services"
     :key="index"
-    class="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg  shadow-lg border border-white/10 rounded-xl p-6 hover:border-gray-600 transition"
+    class="bg-white shadow-lg border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-xl transition"
   >
-    <div class="mb-4 text-gray-300">
+    <div class="mb-4 text-gray-700">
       <div
         v-html="service.icon"
-        class="w-12 h-12 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+        class="w-12 h-12 drop-shadow-md"
       ></div>
     </div>
-    <h3 class="text-lg font-bold mb-2">{{ service.title }}</h3>
-    <p class="text-gray-400 text-sm leading-relaxed">{{ service.description }}</p>
+    <h3 class="text-lg font-bold mb-2 text-gray-900">{{ service.title }}</h3>
+    <p class="text-gray-600 text-sm leading-relaxed">{{ service.description }}</p>
   </div>
 </div>
 </div>
@@ -44,7 +44,7 @@
 <script setup>
 const services = [
   {
-    icon: `<img width="54" height="54" src="https://img.icons8.com/color/48/web-design.png" alt="web-design"/>`,
+    icon: `<img width="54" height="54" src="https://img.icons8.com/color/48/web.png" alt="web"/>`,
     title: "UI/UX",
     description:
       "We craft user-focused interfaces driven by data and strategy, ensuring every design decision enhances engagement and achieves your business goals.",

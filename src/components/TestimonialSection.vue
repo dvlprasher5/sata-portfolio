@@ -1,7 +1,7 @@
 <template>
-  <div class=" text-white py-10 overflow-hidden">
+  <div class="text-gray-900 py-10 overflow-hidden bg-gray-50">
     <h2 class="text-3xl font-bold text-center mb-2">Hear from Our Clients</h2>
-    <p class="text-center text-gray-400 mb-10">
+    <p class="text-center text-gray-600 mb-10">
       Hear from our satisfied clients about how we have transformed their social media presence and driven meaningful results.
     </p>
 
@@ -9,35 +9,35 @@
     <div class="relative w-full overflow-hidden">
       <div class="flex animate-scroll-left">
         <div v-for="(card, i) in testimonials" :key="'r1-'+i" class="card">
-          <div class="card-content bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10">
+          <div class="card-content bg-white shadow-lg border border-gray-200">
             <div class="flex">
-              <Star fill="yellow" color="yellow" size="18" v-for="n in 5" :key="n" />
+              <Star fill="#fbbf24" color="#fbbf24" size="18" v-for="n in 5" :key="n" />
             </div>
             <div class="flex gap-3 items-center">
               <img :src="card.img" alt="Profile" class="w-12 h-12 rounded-full" />
               <div>
-                <h3 class="font-bold">{{ card.name }}</h3>
-                <p class="text-sm text-gray-400">{{ card.role }}</p>
+                <h3 class="font-bold text-gray-900">{{ card.name }}</h3>
+                <p class="text-sm text-gray-600">{{ card.role }}</p>
               </div>
             </div>
-            <p class="text-gray-300 text-sm card-text">"{{ card.text }}"</p>
+            <p class="text-gray-700 text-sm card-text">"{{ card.text }}"</p>
           </div>
         </div>
 
         <!-- duplicate for seamless loop -->
         <div v-for="(card, i) in testimonials" :key="'r1dup-'+i" class="card">
-          <div class="card-content bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10">
+          <div class="card-content bg-white shadow-lg border border-gray-200">
             <div class="flex">
-              <Star fill="yellow" color="yellow" size="18" v-for="n in 5" :key="n" />
+              <Star fill="#fbbf24" color="#fbbf24" size="18" v-for="n in 5" :key="n" />
             </div>
             <div class="flex gap-3 items-center">
               <img :src="card.img" alt="Profile" class="w-12 h-12 rounded-full" />
               <div>
-                <h3 class="font-bold">{{ card.name }}</h3>
-                <p class="text-sm text-gray-400">{{ card.role }}</p>
+                <h3 class="font-bold text-gray-900">{{ card.name }}</h3>
+                <p class="text-sm text-gray-600">{{ card.role }}</p>
               </div>
             </div>
-            <p class="text-gray-300 text-sm card-text">"{{ card.text }}"</p>
+            <p class="text-gray-700 text-sm card-text">"{{ card.text }}"</p>
           </div>
         </div>
       </div>
@@ -47,34 +47,34 @@
     <div class="relative w-full overflow-hidden mt-6">
       <div class="flex animate-scroll-right">
         <div v-for="(card, i) in testimonials" :key="'r2-'+i" class="card">
-          <div class="card-content bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10">
+          <div class="card-content bg-white shadow-lg border border-gray-200">
             <div class="flex">
-              <Star fill="yellow" color="yellow" size="18" v-for="n in 5" :key="n" />
+              <Star fill="#fbbf24" color="#fbbf24" size="18" v-for="n in 5" :key="n" />
             </div>
             <div class="flex gap-3 items-center">
               <img :src="card.img" alt="Profile" class="w-12 h-12 rounded-full" />
               <div>
-                <h3 class="font-bold">{{ card.name }}</h3>
-                <p class="text-sm text-gray-400">{{ card.role }}</p>
+                <h3 class="font-bold text-gray-900">{{ card.name }}</h3>
+                <p class="text-sm text-gray-600">{{ card.role }}</p>
               </div>
             </div>
-            <p class="text-gray-300 text-sm card-text">"{{ card.text }}"</p>
+            <p class="text-gray-700 text-sm card-text">"{{ card.text }}"</p>
           </div>
         </div>
 
         <div v-for="(card, i) in testimonials" :key="'r2dup-'+i" class="card">
-          <div class="card-content bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10">
+          <div class="card-content bg-white shadow-lg border border-gray-200">
             <div class="flex">
-              <Star fill="yellow" color="yellow" size="18" v-for="n in 5" :key="n" />
+              <Star fill="#fbbf24" color="#fbbf24" size="18" v-for="n in 5" :key="n" />
             </div>
             <div class="flex gap-3 items-center">
               <img :src="card.img" alt="Profile" class="w-12 h-12 rounded-full" />
               <div>
-                <h3 class="font-bold">{{ card.name }}</h3>
-                <p class="text-sm text-gray-400">{{ card.role }}</p>
+                <h3 class="font-bold text-gray-900">{{ card.name }}</h3>
+                <p class="text-sm text-gray-600">{{ card.role }}</p>
               </div>
             </div>
-            <p class="text-gray-300 text-sm card-text">"{{ card.text }}"</p>
+            <p class="text-gray-700 text-sm card-text">"{{ card.text }}"</p>
           </div>
         </div>
       </div>
@@ -84,34 +84,34 @@
     <div class="relative w-full overflow-hidden mt-6">
       <div class="flex animate-scroll-left">
         <div v-for="(card, i) in testimonials" :key="'r3-'+i" class="card">
-          <div class="card-content bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10">
+          <div class="card-content bg-white shadow-lg border border-gray-200">
             <div class="flex">
-              <Star fill="yellow" color="yellow" size="18" v-for="n in 5" :key="n" />
+              <Star fill="#fbbf24" color="#fbbf24" size="18" v-for="n in 5" :key="n" />
             </div>
             <div class="flex gap-3 items-center">
               <img :src="card.img" alt="Profile" class="w-12 h-12 rounded-full" />
               <div>
-                <h3 class="font-bold">{{ card.name }}</h3>
-                <p class="text-sm text-gray-400">{{ card.role }}</p>
+                <h3 class="font-bold text-gray-900">{{ card.name }}</h3>
+                <p class="text-sm text-gray-600">{{ card.role }}</p>
               </div>
             </div>
-            <p class="text-gray-300 text-sm card-text">"{{ card.text }}"</p>
+            <p class="text-gray-700 text-sm card-text">"{{ card.text }}"</p>
           </div>
         </div>
 
         <div v-for="(card, i) in testimonials" :key="'r3dup-'+i" class="card">
-          <div class="card-content bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/70 backdrop-blur-lg shadow-lg border border-white/10">
+          <div class="card-content bg-white shadow-lg border border-gray-200">
             <div class="flex">
-              <Star fill="yellow" color="yellow" size="18" v-for="n in 5" :key="n" />
+              <Star fill="#fbbf24" color="#fbbf24" size="18" v-for="n in 5" :key="n" />
             </div>
             <div class="flex gap-3 items-center">
               <img :src="card.img" alt="Profile" class="w-12 h-12 rounded-full" />
               <div>
-                <h3 class="font-bold">{{ card.name }}</h3>
-                <p class="text-sm text-gray-400">{{ card.role }}</p>
+                <h3 class="font-bold text-gray-900">{{ card.name }}</h3>
+                <p class="text-sm text-gray-600">{{ card.role }}</p>
               </div>
             </div>
-            <p class="text-gray-300 text-sm card-text">"{{ card.text }}"</p>
+            <p class="text-gray-700 text-sm card-text">"{{ card.text }}"</p>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ const testimonials = [
 }
 
 .card-content {
-  background-color: #1f1f1f;
+  background-color: #ffffff;
   border-radius: 0.5rem;
   padding: 1.5rem;
   height: 100%;

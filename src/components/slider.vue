@@ -1,19 +1,16 @@
 <template>
-  <div class="relative overflow-hidden py-4">
-    <!-- Left blur -->
-    <div class="pointer-events-none absolute top-0 left-0 w-32 h-full bg-gradient-to-r  to-transparent z-10"></div>
-    <!-- Right blur -->
-    <div class="pointer-events-none absolute top-0 right-0 w-32 h-full bg-gradient-to-l  to-transparent z-10"></div>
-
+  <div class="relative overflow-hidden py-4 bg-gray-50">
+    
     <!-- Scrolling content -->
     <div class="flex whitespace-nowrap animate-slide">
       <div
         v-for="(item, index) in repeatedItems"
         :key="index"
-        class="flex items-center mx-8 text-white font-semibold text-[28px]"
+        class="flex items-center mx-8 font-semibold text-[28px]"
+        style="color: #111827 !important;"
       >
-        <span>{{ item }}</span>
-        <span class="mx-6 text-white">✦</span>
+        <span style="color: #111827 !important;">{{ item }}</span>
+        <span class="mx-6" style="color: #3b82f6 !important;">✦</span>
       </div>
     </div>
   </div>
@@ -47,5 +44,14 @@ export default {
 
 .animate-slide {
   animation: slide 12s linear infinite;
+}
+
+/* Force light theme colors */
+div {
+  background-color: gray-50 !important;
+}
+
+span {
+  color: #111827 !important;
 }
 </style>

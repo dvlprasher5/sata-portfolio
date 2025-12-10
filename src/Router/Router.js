@@ -3,6 +3,7 @@ import Contact from '@/Pages/Contact.vue'
 import Home from '@/Pages/Home.vue'
 import Work from '@/Pages/Work.vue'
 
+
 import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
 
 const routes = [

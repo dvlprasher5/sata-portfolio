@@ -1,10 +1,9 @@
 <template>
-  <div class=" bg-[#0D0D0D]">
+  <div class="bg-gray-50">
     <Navbar />
     <Herosection/>
     <Slider/>
     <OurServices/>
-    <DefineOptions/>
     <ProvenProcess/>
     <CaseStudies/>
     <PricingSection/>
@@ -18,7 +17,6 @@
 
 <script setup>
 import CaseStudies from '@/components/CaseStudies.vue';
-import DefineOptions from '@/components/DefineOptions.vue';
 import FooterSection from '@/components/FooterSection.vue';
 import Herosection from '@/components/Herosection.vue';
 import MarkeetingResults from '@/components/MarkeetingResults.vue';
